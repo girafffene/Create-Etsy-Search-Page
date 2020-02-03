@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Whiskey | Etsy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header>
+    <a id="etsyHeader">Etsy</a>
+    <form class="topnav" action="action_page.php">
+      <input class="searchBar" type="text" placeholder="Search for items or shops" name="search" value="whiskey"
+        type="search" />
+      <input class="searchButt" onclick="ClearFields();" type="reset" value="x"></input>
+      <button class="glass" type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+    <a class="signIn">Sign in</a>
+    <span class="cart"><i class="fa fa-shopping-cart"></i></span>
+  </header>
+
+  <div class="categories">
+    <ul class="topTopButtons">
+      <li>Jewelry & Accessories</li>
+      <li>Clothing and Shoes</li>
+      <li>Home & Living</li>
+      <li>Wedding & Party</li>
+      <li>Toys & Entertainment</li>
+      <li>Art & Collectibles</li>
+      <li>Craft Supplies</li>
+      <li>Vintage</li>
+      <li class="giftLi">
+        <p class=gift><i class="fa fa-gift" aria-hidden="true"></i></p>
+        <a class="giftWord">Gifts</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="related">
+    <ul class="topButtons">
+      <li>whiskey stones</li>
+      <li>whiskey decanter</li>
+      <li>whiskey barrel</li>
+      <li>whiskey glasses</li>
+      <li>bourbon</li>
+      <li>whiskey dispenser</li>
+      <li>whiskey box</li>
+      <li>whiskey gift</li>
+      <li>whiskey svg</li>
+      <li>whiskey print</li>
+    </ul>
+  </div>
+
+  <div class="sidebar">
+    <div class="allCategories">
+      <ul>
+        <li>All categories</li>
+        <li class="catLi">Home & Living</li>
+        <li class="catLi">Art & Collectibles</li>
+        <li class="catLi">Clothing</li>
+        <li class="catLi">Weddings</li>
+        <li>
+          <button class="showMoreButt" type="button">
+            <span class="showMore"><i class="fa fa-plus" aria-hidden="true"></i>
+            </span> Show More
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="specialOffers">
+      <ul>
+        <li>Special offers</li>
+        <li class="specialCheck">
+          <input type="checkbox" name="freeShipping" />FREE Shipping<br />
+        </li>
+        <li class="specialCheck">
+          <input type="checkbox" name="sale" />On sale<br />
+        </li>
+      </ul>
+    </div>
+
+    <div class="shipping">
+      <ul>
+        <li>Ready to ship in</li>
+        <li class="shippingLi">
+          <input type="checkbox" name="oneDay" />1 business day<br />
+        </li>
+        <li class="shippingLi">
+          <input type="checkbox" name="threeDay" />1 - 3 business days<br />
+        </li>
+      </ul>
+    </div>
+
+    <div class="pricing">
+      <ul>
+        <li>Price ($)</li>
+        <li class="priceLi">
+          <input type="radio" name="anyPrice" />Any price<br />
+        </li>
+        <li class="priceLi">
+          <input type="radio" name="under25" />Under $25<br />
+        </li>
+        <li class="priceLi">
+          <input type="radio" name="25to75" />$25 to $75<br />
+        </li>
+        <li class="priceLi">
+          <input type="radio" name="75to100" />$75 to $100<br />
+        </li>
+        <li class="priceLi">
+          <input type="radio" name="over100" />Over $100<br />
+        </li>
+        <li class="priceLi">
+          <input type="radio" name="custom" />Custom<br />
+        </li>
+      </ul>
+      <input class="priceBox1" type="text" placeholder="low" /> to
+      <input class="priceBox2" type="text" placeholder="high" /><button class="priceButton" type="button">
+        >
+      </button>
+    </div>
+
+    <div class="material">
+      <ul>
+        <li>Material</li>
+        <li class="matLi">
+          <input type="checkbox" name="ceramic" />Ceramic<br />
+        </li>
+        <li class="matLi"><input type="checkbox" name="cork" />Cork<br /></li>
+        <li class="matLi">
+          <input type="checkbox" name="fabric" />Fabric<br />
+        </li>
+        <li class="matLi">
+          <input type="checkbox" name="glass" />Glass<br />
+        </li>
+        <li class="matLi">
+          <input type="checkbox" name="metal" />Metal<br />
+        </li>
+        <li><button class="matButt" type="button"><span class="showMore"><i class="fa fa-plus"></i></span>Show
+            More</button></li>
+      </ul>
+    </div>
+
+    <div class="colors">
+      <ul>
+        <li>Color</li>
+        <li class="colorLi">
+          <input type="checkbox" name="beige" />Beige<br />
+        </li>
+        <li class="colorLi">
+          <input type="checkbox" name="black" />Black<br />
+        </li>
+        <li class="colorLi">
+          <input type="checkbox" name="blue" />Blue<br />
+        </li>
+        <li class="colorLi">
+          <input type="checkbox" name="bronze" />Bronze<br />
+        </li>
+        <li class="colorLi">
+          <input type="checkbox" name="brown" />Brown<br />
+        </li>
+        <li><button class="colorButt" type="button"><span class="showMore"><i class="fa fa-plus"></i></span>Show
+            More</button></li>
+      </ul>
+    </div>
+
+    <div class="personalization">
+      <ul>
+        <li>Can be personalized</li>
+        <li class="personLi">
+          <input type="checkbox" name="yes" />Yes<br />
+        </li>
+        <li class="personLi"><input type="checkbox" name="no" />No<br /></li>
+      </ul>
+    </div>
+
+    <div class="occasion">
+      <ul>
+        <li>Occasion</li>
+        <li class="occLi">
+          <input type="checkbox" name="anni" />Anniversary<br />
+        </li>
+        <li class="occLi">
+          <input type="checkbox" name="baby" />Baby shower<br />
+        </li>
+        <li class="occLi">
+          <input type="checkbox" name="bachelor" />Bachelor Party<br />
+        </li>
+        <li class="occLi">
+          <input type="checkbox" name="bachelorette" />Bachelorette Party<br />
+        </li>
+        <li class="occLi">
+          <input type="checkbox" name="bday" />Birthday<br />
+        </li>
+        <li><button class="occButt" type="button"><span class="showMore"><i class="fa fa-plus"></i></span>Show
+            More</button></li>
+      </ul>
+    </div>
+
+    <div class="holidays">
+      <ul>
+        <li>Holiday</li>
+        <li class="hoLiday">
+          <input type="checkbox" name="xmas" />Christmas<br />
+        </li>
+        <li class="hoLiday">
+          <input type="checkbox" name="mayo" />Cinco de Mayo<br />
+        </li>
+        <li class="hoLiday">
+          <input type="checkbox" name="easter" />Easter<br />
+        </li>
+        <li class="hoLiday">
+          <input type="checkbox" name="father" />Father's Day<br />
+        </li>
+        <li class="hoLiday">
+          <input type="checkbox" name="halloween" />Halloween<br />
+        </li>
+        <li><button class="hoButt" type="button"><span class="showMore"><i class="fa fa-plus"></i></span>Show
+            More</button></li>
+      </ul>
+    </div>
+
+    <div class="location">
+      <ul>
+        <li>Shop location</li>
+        <li class="loLli">
+          <input type="radio" name="anywhere" />Anywhere<br />
+        </li>
+        <li class="loLli">
+          <input type="radio" name="usa" />United States<br />
+        </li>
+        <li class="loLli">
+          <input type="radio" name="custom" />Custom<br />
+        </li>
+        <input class="loBox" type="text" placeholder="Enter location" /><button class="loButt" type="button">
+          >
+        </button>
+      </ul>
+    </div>
+
+    <div class="itemType">
+      <ul>
+        <li>Item type</li>
+        <li class="itemLi">
+          <input type="radio" name="all" />All items<br />
+        </li>
+        <li class="itemLi">
+          <input type="radio" name="handmade" />Handmade<br />
+        </li>
+        <li class="itemLi">
+          <input type="radio" name="vintage" />Vintage<br />
+        </li>
+      </ul>
+    </div>
+
+    <div class="orderOpt">
+      <ul>
+        <li>Ordering options</li>
+        <li class="orderLi">
+          <input type="checkbox" name="giftCard" />Accepts Etsy gift cards<br />
+        </li>
+        <li class="orderLi">
+          <input type="checkbox" name="giftWrap" />Can be gift-wrapped<br />
+        </li>
+      </ul>
+    </div>
+
+    <div class="shipTo">
+      <ul>
+        <li>Ship to</li>
+        <li id="shipSelect"><label id="country" name="Country">
+            <select id="shipSelect" name="country">
+              <option value="" disabled selected hidden>
+                Choose a Country:
+              </option>
+              <option value="Afganistan">Afghanistan</option>
+              <option value="Australia">Australia</option>
+              <option value="Canada">Canada</option>
+              <option value="China">China</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Djibouti">Djibouti</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="Iraq">Iraq</option>
+              <option value="Ireland">Ireland</option>
+              <option value="United States">United States</option>
+              <option value="Other">Other</option>
+            </select>
+          </label></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <p class="whiskeyResult">
+      All categories <span class="boldWhiskey"> > "whiskey"</span> (79,767
+      Results)
+    </p>
+    <label id="sortBy" name="sortBy">
+      <select id="sortBy" name="sortBy">
+        <option value="" disabled selected hidden>
+          Sort By:
+        </option>
+        <option value="relevancy">Relevancy</option>
+        <option value="topCustomerReviews">Top Customer Reviews</option>
+        <option value="highestPrice">Highest Price</option>
+        <option value="lowestPrice">Lowest Price</option>
+        <option value="mostRecent">Most Recent</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="wrapper">
+    <div id="products"></div>
+  </div>
+
+
+  <div>
+    <p class="discover">There's so much more for you to discover</p>
+  </div>
+
+  <div>
+    <ul class="pageNumbers">
+      <li><span class="arrowLeft"><i class="fa fa-arrow-left"></i></span></li>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>...</li>
+      <li>250</li>
+      <li><span class="arrowRight"><i class="fa fa-arrow-right"></i></span></li>
+    </ul>
+  </div>
+
+  <script src="items.js"></script>
+  <script src="intro.js"></script>
+</body>
+
+</html>
